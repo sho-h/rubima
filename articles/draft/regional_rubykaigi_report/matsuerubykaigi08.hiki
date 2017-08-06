@@ -2,15 +2,17 @@
 
 !! はじめに
 
-2016年12月17日（土）に松江Ruby会議08が開催されました。今年のテーマはTODOというものでした。今年は合計TODO名の方々に参加いただきました。
+2016年12月17日（土）に松江Ruby会議08が開催されました。今年は合計91名の方々に参加いただきました。
 
 * 日時：2016年12月17日（土）11:00〜17:40（懇親会: 18:00〜）
 * 場所：松江テルサ４Ｆ大会議室
 * 主催：Matsue.rb（まつえるびー）
 * 後援：日本Rubyの会
 * 動画による中継(Youtube)：TODO
-* Togetterまとめ：
+* Togetterまとめ： https://togetter.com/li/1061092
 * 公式タグ・Twitter：[[#matrk08|https://twitter.com/hashtag/matrk08]]
+
+[[発表の様子|matsuerubykaigi08/07_all.jpg]]
 
 !! 許可を得る前にプルリクしよう (ゲスト講演)
 
@@ -19,9 +21,9 @@
 * 資料
 ** https://speakerdeck.com/ppworks/matrk08
 
-[[発表の様子|matsuerubykaigi08/TODO.jpg]]
+[[発表の様子|matsuerubykaigi08/01_guest01_koshikawa.jpg]]
 
-「許可を得る前にプルリクしよう」と題して、株式会社マネーフォワードの Rails エンジニアである越川氏(@ppworks)に講演をいただきました。
+「許可を得る前にプルリクしよう」と題して、株式会社マネーフォワードの Rails エンジニアである越川氏([[@ppworks|https://twitter.com/ppworks]])に講演をいただきました。
 越川氏は初めての来松ということで、貴重なお話を持って松江に来ていただいたことに感謝です。
 
 !!! マネーフォワードについて
@@ -82,7 +84,7 @@ Pull Request の思想はチームでの意思決定のプロセスの民主化�
 
 * 僕とRubyコミュニティ
 ** 発表者
-*** むらじゅん氏([[@TODO|TODO]])
+*** むらじゅん氏([[@murajun1978|https://twitter.com/murajun1978]])
 * 2006-2016 Ruby, OSS, Thinreports
 ** 発表者
 *** 日高 克也氏
@@ -93,14 +95,12 @@ Pull Request の思想はチームでの意思決定のプロセスの民主化�
 ** 発表者
 *** 松岡 香里氏
 
-[[発表の様子|matsuerubykaigi08/TODO.jpg]]
-
 !! The Power of Storytelling (基調講演)
 
 * 発表者
 ** まつもとゆきひろ氏([[@yukihiro_matz|https://twitter.com/yukihiro_matz]])
 
-[[発表の様子|matsuerubykaigi08/TODO.jpg]]
+[[発表の様子|matsuerubykaigi08/02_keynote_matz.jpg]]
 
 連日の講演で体調が悪い中、今回も松江Ruby会議でご講演いただきありがとうございます！
 愛犬が散歩中に引かれたようでしたが無事退院できたそうで安心しました。
@@ -169,7 +169,7 @@ Rubyという触媒を受けてここまでの人が集まり、各々でのRuby
 * 資料
 ** https://speakerdeck.com/a_matsuda/my-favorite-tools
 
-[[発表の様子|matsuerubykaigi08/TODO.jpg]]
+[[発表の様子|matsuerubykaigi08/03_guest02_amatsuda.jpg]]
 
 TODO: @sadaさん
 
@@ -178,9 +178,9 @@ TODO: @sadaさん
 * 発表者
 ** 吉岡隆行氏 ([[@murateku|https://twitter.com/murateku]])、西田 雄也氏 ([[@nishidayuya|https://twitter.com/nishidayuya]])と受賞者の皆さん、スポンサーの皆さん
 
-[[発表の様子|matsuerubykaigi08/TODO.jpg]]
+[[発表の様子|matsuerubykaigi08/04_procon.jpg]]
 
-前回の松江 Ruby 会議 07 では paiza さんとの協賛でオンラインでのプログラミングコンテストが行われました。[昨年度]はpaizaさん協賛の形でしたが、今年度はスタッフで集まって実行環境を開発してみました。
+前回の松江 Ruby 会議 07 では paiza さんとの協賛でオンラインでのプログラミングコンテストが行われました。[[昨年度|https://paiza.jp/poh/joshibato/matsue-ruby]]はpaizaさん協賛の形でしたが、今年度はスタッフで集まって実行環境を開発してみました。
 
 !!! 内容
 
@@ -263,6 +263,8 @@ TODO: プログラムと簡単な解説(1行程度)
 * 発表者
 ** 佐藤氏
 
+[[発表の様子|matsuerubykaigi08/05_livecoding_sato.jpg]]
+
 島根大学ものづくり部 Pimの佐藤氏に「mruby/cで携帯回線のIoTデバイスを作ってみた」と題してライブコーディングをしていただきました。
 ライブコーディングは、会場に佐藤氏が持ってきたLEDライトやイルミネーションで飾り付けられたクリスマスツリーを時間内にmruby/cでプログラミングして光らせるという内容でした。
 マイコンボードとしてWakayama.rbの山本氏が作成されたGR-CITRUSを使用しているとのことでした。
@@ -280,6 +282,8 @@ TODO: プログラムと簡単な解説(1行程度)
 次に携帯デバイスからオンにする命令をすることで、クリスマスツリーに飾り付けられたイルミネーションを光らせることができるようにライブコーディングを行い、会場を盛り上げました。
 
 !! Ruby Quiz
+
+[[発表の様子|matsuerubykaigi08/06_rubyquiz.jpg]]
 
 TODO: @nobyukiさん
 
