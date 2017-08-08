@@ -171,7 +171,65 @@ Rubyという触媒を受けてここまでの人が集まり、各々でのRuby
 
 [[発表の様子|matsuerubykaigi08/03_guest02_amatsuda.jpg]]
 
-TODO: @sadaさん
+株式会社マネーフォワードの松田明氏にご講演いただきました。
+「My Favorite Tool」と題して、松田明氏の開発環境の紹介・その他開発に使用するツールについてご紹介いただきました。
+会場もご講演の内容を熱心に聞いている様子でした。
+以降は、松田明氏にご紹介いただいたツールについてテキストにしたものです。
+
+!![[md2key|https://github.com/k0kubun/md2key]]
+
+Markdown記法のテキストからKeynoteへ変換してくれるコマンドラインツールで、プレゼン資料を作成する時に使われており、md2keyのソースコードへのコミットも良くされているとのことでした。
+松田明氏がどのようにmd2keyを使われているかもご紹介いただき、発表前日の移動時間などの空き時間を使用してiPhoneのNotesで発表で話したいことを箇条書きでまとめておき、発表日にmd2keyで変換してプレゼン資料を仕上げているとのことでした。
+
+!![[gem-src|https://github.com/amatsuda/gem-src]]
+
+gem install、bundle installをフックして、インストールされたgemのメタデータからソースコードのリポジトリを探してきてgit cloneしてくれるrbenvプラグイン。
+松田明氏が使用しているプロダクトにバグを見つけた時に、直ぐにパッチを書いて対処したいので、ソースコードは全て手元に置いておきたいので使用しているとのことでした。
+手元にダウンロードしたgemパッケージから検索すれば、使用しているgemのソースコード中からのみ検索することができるとのことでした。
+
+!![[gem-repositorizer|https://github.com/amatsuda/gem-repositorizer]]
+
+gem installされた時点でバージョン管理を始めておくためのgem plugin。
+開発中にbundleしているgemをデバッグする時に、gem側のソースコードを書き換えることがあるが、バージョン管理していないと書き換えた内容が分からなくなってしまうので作成された個人用のツールとのことでした。
+
+!!git-*
+
+gitのサブコマンドで自分用に設定されていることについてご紹介いただきました。
+git aliasでgit addのaddを「ad」や「a」にされていることや、gitのサブコマンドをrebase、cherry-pick、commitのようなコマンドにされているとのことでした。
+
+特にcommitコマンドについてご紹介いただき、たとえばコマンドライン上にコマンドがある時に「commit <コマンド>」のような形式で使用して、コミットメッセージをダブルクォートで囲む作業を減らしていることができるとのことでした。
+それとコミットに関する話で、コードを生成するコマンドを実行した場合、そのコードはそのままコミットして欲しいとのことでした。
+
+!![[action_args|https://github.com/asakusarb/action_args]]
+
+Rails 3でマージされたMerbプロジェクトで使用されていた機能のgemパッケージ。
+action_argsを使用すればコントローラのアクションを、Rubyのメソッドらしく書くことができ、既存のRails式のコードもそのまま動作するので、bundleしておくことをお勧めするとのことでした。
+action_argsに関する話で、Railsに取り込みたいと松田明氏がDHHに提案した時の話や、内部実装に関する話をしていただきました。
+
+!![[database_rewinder|https://github.com/amatsuda/database_rewinder]]
+
+database_cleanerというgemパッケージのオルタナティブ。
+松田明氏のご講演の中では、Rails標準のtransactional_testの動きや、database_cleanerとdatabase_rewinderの違いについてお話いただきました。
+
+!![[test-unit|https://github.com/test-unit/test-unit]]
+
+松田明氏はテストはtest-unitを使用されているとのことでした。
+test-unitの2つの機能についてお話していただきました。
+
+* power_assert
+* sub_test_case
+    * RSpecのdescribeやcontextみたいに階層構造を持ったテストケースが書ける。
+
+!![[rfd|https://github.com/amatsuda/rfd]]
+
+Rubyで書かれたファイラ。実装についてお話いただきました。
+rfdは押されたキーの名前をsendして、対応する名前のメソッドを呼び出して、メソッドに定義された処理が実行されるという実装になっており、プラグインが書きやすいとのことでした。
+
+!!まとめ
+
+松田明氏にご紹介いただいたツールは、インターネット上に公開されているものが多く、ツールを使用していた方からPull Requestをいただき、もっとツールを良くしてくれたことをお話いただきました。
+また、プログラマには自分が使う道具を作る権利があり、コードを書く道具を作る楽しみをしないのはもったいないので、皆コードを書きましょうと呼びかけました。
+最後に松江Ruby会議08が開催された松江市が[[Ruby City MATSUEプロジェクト|http://www1.city.matsue.shimane.jp/jigyousha/sangyou/ruby/]]をしていることもあり、yet another Ruby Cityとして東京都の谷根千をご紹介いただきました。
 
 !! プログラミングコンテスト結果発表
 
