@@ -8,7 +8,7 @@
 * 場所：松江テルサ４Ｆ大会議室
 * 主催：Matsue.rb（まつえるびー）
 * 後援：日本Rubyの会
-* 動画による中継(Youtube)：TODO
+* 動画による中継(Youtube)：https://www.youtube.com/playlist?list=PLbJxhePIoIPBU5f0cAn4BceCG48EGSHsA
 * Togetterまとめ： https://togetter.com/li/1061092
 * 公式タグ・Twitter：[[#matrk08|https://twitter.com/hashtag/matrk08]]
 
@@ -242,7 +242,7 @@ rfdは押されたキーの名前をsendして、対応する名前のメソッ�
 
 !!! 内容
 
-標準入力で与えられる迷路(以下など)を解く時間(同じならば次にプログラムサイズ)を競う内容でした。なお、迷路のサイズは問題によって異なります。
+標準入力で与えられる迷路(以下など)を解く時間(同じならば次にプログラムサイズ)を競う内容でした。なお、迷路は全部で5つあり、そのサイズは問題によって異なります。
 
 <<<
 #################
@@ -264,51 +264,95 @@ S #     #       #
 #################
 >>>
 
-投稿プログラムは合計5問の迷路を解いてもらいました。
-
 !!! 受賞者の皆さんと投稿プログラム
 
-松江Ruby会議08での受賞者の皆さんのコードは以下のようなものでした。
+松江Ruby会議08での受賞者の皆さんのコードは以下のようなものでした。2位の方までですが簡単にご紹介します。
 
 !!!! 一般部門
 
-shugo氏(1位: 209バイト)
+!!!!! shugo氏(1位: 165バイト)
 
 <<<
-TODO: プログラムと簡単な解説(1行程度)
+m=$<.read;v=m.tr($/,?#).unpack"C*";g=/G/=~m;q=[s=/S/=~m];while(i=q.pop)!=g;v[i]=35;[1,-1,s,-s].each{|d|v[j=i+d]!=35&&q<<j&&$:[j]=i}end;m[i]=?:while(i=$:[i])!=s;$><<m
 >>>
 
-nari3氏(2位: 642バイト)
+詳しい解説は[[こちら|https://shugo.net/jit/20161217.html#p01]]にてshugoさんご自身にしていただいています。ダイクストラ法で解かれたようですが、A*法も試された上で更にこのプログラムサイズにまでなっている点がすごいですね。
+
+しかし、出題者としてはもう少し大きい迷路しておけばよかったと思ってしまいました。
+
+!!!!! nari3氏(2位: 658バイト)
 
 <<<
-TODO: プログラムと簡単な解説(1行程度)
+M=$<.read.lines.map(&:chomp)
+N=M.size+5
+MX=N*N
+A=Array
+S=A.new(N){A.new(N,-1)}
+K=[]
+D=[[1,0],[-1,0],[0,1],[0,-1]]
+
+M.each_with_index{|l,y|
+  l.chars.each_with_index{|c,x|
+    case c
+    when ' '
+      S[y][x]=MX
+    when 'S'
+      @s=[x,y,MX]
+    when 'G'
+      @g=[x,y,1]
+    end
+}}
+K<<@g
+while K[0]
+  px,py,st = K.pop
+  D.each{|dx,dy|
+    x=px+dx;y=py+dy
+    if S[y][x] > st
+      S[y][x]=st
+      K<<[x,y,st+1]
+    end
+  }
+end
+w=@s
+while w
+  px,py,st=w
+  n=D.map{|dx, dy|
+    x=px+dx;y=py+dy
+    [x,y,S[y][x]]
+  }.select{|s| s[2] > 0 && s[2] < st }.min_by{|s| s[2] }
+  M[n[1]][n[0]] = ':' if n
+  w = n
+end
+
+puts(M)
 >>>
 
-sa氏(3位: 1531バイト)
-
-<<<
-TODO: プログラムと簡単な解説(1行程度)
->>>
+全ての経路を試すタイプの解き方のようです。ゴールに到達できる経路が2つ(ただし、最短を選択する必要があるので正解は1つ)ある問題で困る可能性があるのですが、無事回避されてしまったようです。
 
 !!!! 学生部門
 
-momiji氏(1位: 255バイト)
+!!!!! momiji氏(1位: 269バイト)
 
 <<<
-TODO: プログラムと簡単な解説(1行程度)
+a=STDIN.each_line.map(&:chomp);w=a.size;$b=Array.new;$f=Array.new;def e(n);if$b[n]==nil&&$m[n]==' ';$f.push(n);$b[n]=$c;end;end;$m=a.join;c=$m.index('S');while $m[c+1]!='G';$c=c;e(c+1);e(c+w);e(c-w);e(c-1);c=$f.pop;end;while$m[c]!='S';a[c/w][c%w]=':';c=$b[c];end;puts a
 >>>
 
-ミュミャリャツァオビュビュンピピュプリャプピフンドシン氏(2位: 1152バイト)
+nari3氏と方針としては同じでしたが表現の仕方が違いました。1経路分のデータを配列などではなく文字列にして管理してるのが面白いですね。
+
+!!!!! ミュミャリャツァオビュビュンピピュプリャプピフンドシン氏(2位: 1152バイト)
 
 <<<
-TODO: プログラムと簡単な解説(1行程度)
+maze_ary = STDIN.each_line.map(&:chomp);class Maze;def initialize(inp);@wi = inp[0].length - 1;@he = inp.length;@ma = [];inp.each do |input|;li = [];input.split("").each do |c|;next if c == "\n";@start = {:x => li.length, :y => @ma.length } if c == "S";@goal  = {:x => li.length, :y => @ma.length } if c == "G";c == " " ? li.push(@wi * @he) : li.push(c);end;@ma.push(li);end;end;def tok;his = [];ido(@start[:x], @start[:y], his);@ans.each do |hi|;next if ["S", "G"].include?(@ma[hi[:y]][hi[:x]]);@ma[hi[:y]][hi[:x]] = ":";end;end;def ido(x, y, his);his.push({:x => x, :y => y});return if @ma[y][x] == "#";return if @ma[y][x] == "S" && his.length > 1;if @ma[y][x] == "G" then;if @ans == nil || history.length < @ans.length then;@ans = his.clone;end;return;end;if @ma[y][x].kind_of?(Numeric) then;return if @ma[y][x] <= his.length;@ma[y][x] = his.length;end;ido(x - 1, y, his);his.pop;ido(x + 1, y, his);his.pop;ido(x, y - 1, his);his.pop;ido(x, y + 1, his);his.pop;end;def to_s;str = "";str << @ma.map do |line|;line.map do |c|;c.kind_of?(Numeric) ? " " : c;end.join("");end.join("\n");end;end;maze_ary = Maze.new(maze_ary);maze_ary.tok;puts(maze_ary)
 >>>
 
-ももんが氏(3位: 2116バイト)
+nari3氏と方針としては同じでしたが表現の仕方が違いました。再起のある/なしやデータの持ち方で三者三様のコードになっているのが面白いですね。なお、投稿時は入賞するとは思っていなかったそうで、名前も面白い事になっています。
 
-<<<
-TODO: プログラムと簡単な解説(1行程度)
->>>
+!!!! その他
+
+上記以外で挑戦いただいてご自身の解答を公開されてる方々です。simanさんの記事は力作ですので是非どうぞ。yharaさんのプログラムはそれ自身も迷路になっており流石というほかありませんでした。
+
+* [[simanさん|http://qiita.com/siman/items/11444f7c0720e994dd01]]
+* [[yharaさん|https://twitter.com/yhara/status/810155346954190848]]
 
 !!! 実行環境
 
