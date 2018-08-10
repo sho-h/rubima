@@ -37,7 +37,7 @@ TODO: @sho-h
 * 発表者
   * まつもとゆきひろ氏([@yukihiro_matz](https://twitter.com/yukihiro_matz))
 
-![03_keynote_matz.jpg](TODO.jpg)
+![03_keynote_matz.jpg](matsuerubykaigi09/03_keynote_matz.jpg)
 
 まつもと氏がRubyを設計するにあたって，参考にしたEmacsの実装や参考にした他の言語を紹介いただきました．
 
