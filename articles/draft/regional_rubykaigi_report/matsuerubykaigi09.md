@@ -32,14 +32,29 @@ tags: 0058 MatsueRubyKaigi09Report
 
 TODO: @sho-h
 
-### TODO (基調講演)
+### Rubyはなんでできているの？（基調講演）
 
 * 発表者
   * まつもとゆきひろ氏([@yukihiro_matz](https://twitter.com/yukihiro_matz))
 
 ![03_keynote_matz.jpg](TODO.jpg)
 
-TODO: @nishidayuya
+まつもと氏がRubyを設計するにあたって，参考にしたEmacsの実装や参考にした他の言語を紹介いただきました．
+
+EmacsからはGCや最初期の正規表現といった実装以外にも，auto indentできない文法にしない考えでRuby自体より先にRubyモードを作ったといったエピソードをうかがいました．参考にした言語とその機能は次が紹介されました．
+
+* LISP: シンボル （2.3.x以前の）Bignum メタプログラミング nil
+* CLOS: オブジェクト指向
+* Eiffel: 櫛形構文 require ensure rescue
+* CLU
+* Smalltalk: イテレータ（今で言うブロック付きメソッド呼び出し）
+* Sather: undefとalias
+* Python: classとdef
+* C: 演算子の優先順位
+
+逆に真似しなかった言語としてはIcon APL Forthが挙げていらっしゃいました．
+
+質疑応答にて，既存のものがあってもRubyを設計・実装した動機について質問したところ，「自分が言語を作りたかったから．PerlやPythonが良かったとしても作っていた．」とご回答いただきました．同様のものがあった場合こそ，その動機を維持し続けることが難しいと思いますが，25年の重みを感じるご回答でした．
 
 ### Redmineの更新を楽にする？1つの方法
 
