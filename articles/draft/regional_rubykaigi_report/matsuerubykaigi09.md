@@ -22,7 +22,7 @@ tags: 0058 MatsueRubyKaigi09Report
 * Togetterまとめ： [https://togetter.com/li/1243152](https://togetter.com/li/1243152)
 * 公式タグ・Twitter：[#matrk09](https://twitter.com/hashtag/matrk09)
 
-![01_all.jpg](TODO.jpg)
+![01_all.jpg](matsuerubykaigi09/01_all.jpg)
 
 ### 島根でRubyが使えるようになったキッカケ (ゲスト講演)
 
