@@ -142,9 +142,13 @@ http://www.ruby-alone.org/
 * 資料
   * [https://github.com/matsuerb/matrk/blob/master/09/ruby-quiz.md](https://github.com/matsuerb/matrk/blob/master/09/ruby-quiz.md)
 
-![08_rubyquiz.jpg](TODO.jpg)
+![08_rubyquiz.jpg](matsuerubykaigi09/08_rubyquiz.jpg)
 
-TODO: @nishidayuya
+Rubyにまつわるクイズを解いて賞品をゲットしよう！という恒例のクイズ大会です。
+
+3択の選択問題を5問、前半と後半で2回実施しました。来場者全員参加で正解した人が勝ち残り、前半・後半それぞれ2名の方に賞品がプレゼントされました。なお賞品はスポンサー企業様からご提供いただきました。
+
+Rubyを使っていても普段あまり気にしていない部分を再確認できる楽しいコーナーでした。
 
 ## 謝辞
 
