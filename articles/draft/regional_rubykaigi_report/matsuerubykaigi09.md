@@ -155,9 +155,7 @@ TODO: @nishidayuya
 
 ### 西田 雄也 ([@nishidayuya](https://twitter.com/nishidayuya))
 
-プログラマ。
-Redmineは職場ではもちろん、結婚式のタスク管理以降、家族でも使っている。
-2014-12に [redmine_text_format_converter](https://github.com/nishidayuya/redmine_text_format_converter) というプラグインを開発し、Redmineの書式をTextileからMarkdownに変換して管理下の全てのプロジェクトをMarkdownへ移行させました。
+プログラマ。最近はコマンドによる変更のコミットに使う[git-cococo](https://github.com/nishidayuya/git-cococo)を作った。
 
 ### 佐田 明弘 ([@sada4](https://twitter.com/sada4))
 
