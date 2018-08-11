@@ -18,6 +18,7 @@ tags: 0058 MatsueRubyKaigi09Report
 * 主催：Matsue.rb（まつえるびー）
 * 後援：日本Rubyの会
 * 動画による中継(Youtube)：[https://www.youtube.com/watch?v=Q4QBVKDZwcg](https://www.youtube.com/watch?v=Q4QBVKDZwcg)
+* 写真：[松江Ruby会議09グループ写真](https://www.flickr.com/groups/4470994@N25/pool/)
 * Togetterまとめ： [https://togetter.com/li/1243152](https://togetter.com/li/1243152)
 * 公式タグ・Twitter：[#matrk09](https://twitter.com/hashtag/matrk09)
 
