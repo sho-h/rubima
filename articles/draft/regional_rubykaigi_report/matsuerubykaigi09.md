@@ -136,7 +136,7 @@ http://www.ruby-alone.org/
 * 資料
   * [https://github.com/matsuerb/matrk/blob/master/09/ruby-quiz.md](https://github.com/matsuerb/matrk/blob/master/09/ruby-quiz.md)
 
-![08_rubyquiz.jpg](TODO.jpg)
+![08_rubyquiz.jpg](matsuerubykaigi09/08_rubyquiz.jpg)
 
 Rubyにまつわるクイズを解いて賞品をゲットしよう！という恒例のクイズ大会です。
 
