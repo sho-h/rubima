@@ -64,7 +64,7 @@ EmacsからはGCや最初期の正規表現といった実装以外にも、auto
 * 資料
   * [https://www.slideshare.net/shohashimoto/redmine1-103850531](https://www.slideshare.net/shohashimoto/redmine1-103850531)
 
-![03_session1_sho-h.jpg](matsuerubykaigi09/03_session1_sho-h.jpg)
+![04_session1_sho-h.jpg](matsuerubykaigi09/04_session1_sho-h.jpg)
 
 面倒なRedmineの管理を少しでも楽にする手段を橋本氏に紹介いただきました。メンテナンスやアップデートの有無の通知を自動化するためのプラグインを自作し、実際に日々の運用の中に組み込むことで更新の有無を知るという部分について「楽にする」ことができたということでした。
 橋本氏が自作されたプラグインについても発表中で紹介いただきましたので、こちらでもご紹介させていただきます。Slackへの通知機能等欲しい機能はまだまだあるのでぜひPRを送ってくださいとのことです。
@@ -78,7 +78,7 @@ EmacsからはGCや最初期の正規表現といった実装以外にも、auto
 * 資料
   * [https://speakerdeck.com/gamelinks007/pu-tomastodon](https://speakerdeck.com/gamelinks007/pu-tomastodon)
 
-![04_session2_s_h_.jpg](matsuerubykaigi09/04_session2_s_h_.jpg)
+![05_session2_s_h_.jpg](matsuerubykaigi09/05_session2_s_h_.jpg)
 
 山陰で稼働しているMastodonインスタンスの1つであるいわみどんを以前運営されていた平岡氏にMastodonの最近の動向を紹介いただきました。Mastodon本体のPWA対応のような新機能のご紹介から、じゃんけんに負けたらアカウントが凍結されるというユニークさあふれるインスタンスのお話まで幅広く紹介いただきました。今後の課題としてアカウントの削除による連合の負荷のような実際に起きうる問題まで把握されていたのが印象的でした。
 
@@ -114,7 +114,7 @@ EmacsからはGCや最初期の正規表現といった実装以外にも、auto
 * 発表者
   * 石川 瑞希氏
 
-![05_session3_ishikawa.jpg](matsuerubykaigi09/05_session3_ishikawa.jpg)
+![06_session3_ishikawa.jpg](matsuerubykaigi09/06_session3_ishikawa.jpg)
 
 石川さんが新入社員として、現在の会社に入ってから取り組まれているRubyプロジェクトについて開発手法を交えてご紹介いただきました。
 アジャイル開発手法については採用されている開発案件も多いかとは思いますが、その中でも若手エンジニアから見てどんな良い点があったのか、気づいた点などを発表いただき、いつもとはまた違った視点で開発手法を振り返るきっかけとなったと思います。
@@ -127,7 +127,7 @@ EmacsからはGCや最初期の正規表現といった実装以外にも、auto
 * 資料
   * [https://speakerdeck.com/hidakatsuya/how-to-maintain-compatibility](https://speakerdeck.com/hidakatsuya/how-to-maintain-compatibility)
 
-![06_session4_hidaka.jpg](matsuerubykaigi09/06_session4_hidaka.jpg)
+![07_session4_hidaka.jpg](matsuerubykaigi09/07_session4_hidaka.jpg)
 
 日高氏が開発しているThinreportsを0.8から0.9にバージョンアップした時の変更を例として「後方互換の保ち方」についてお話いただきました。
 ThinreportsのTLFファイル内に保存されたデータにあるSVGは、0.8まではそのまま文字列として保存されていましたが、開発時に差分が確認しにくいなどの不便な点があり、0.9ではJSON形式で保存するように変更されたとのことでした。
@@ -141,7 +141,7 @@ ThinreportsのTLFファイル内に保存されたデータにあるSVGは、0.8
 * 発表者
   * 東 裕人氏（TOC しまねソフト研究開発センター）
 
-![07_session5_higashi.jpg](matsuerubykaigi09/07_session5_higashi.jpg)
+![08_session5_higashi.jpg](matsuerubykaigi09/08_session5_higashi.jpg)
 
 東氏がOSSとして公開している「Alone」について活用事例の紹介を含めてお話ししていただきました。
 事例の紹介の際には実際にどのようなコードで動いているかなどの解説もあり、会場の関心を集めていました。
@@ -157,7 +157,7 @@ http://www.ruby-alone.org/
 * 資料
   * [https://github.com/matsuerb/matrk/blob/master/09/ruby-quiz.md](https://github.com/matsuerb/matrk/blob/master/09/ruby-quiz.md)
 
-![08_rubyquiz.jpg](matsuerubykaigi09/08_rubyquiz.jpg)
+![09_rubyquiz.jpg](matsuerubykaigi09/09_rubyquiz.jpg)
 
 Rubyにまつわるクイズを解いて賞品をゲットしよう！という恒例のクイズ大会です。
 
